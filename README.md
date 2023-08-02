@@ -3,13 +3,13 @@
 Typescript is a superset of javascript. It allows you to write javascript in a more precise manner so your code faces less errors in the runtime.
 
 ```txt
-Typescript is all about Type Safety. 
+Typescript is all about Type Safety.
 ```
 
-**Example**: *The below happens because type safety is missing.*
+**Example**: _The below happens because type safety is missing._
 
 ```js
-2 + "2" // is "22"
+2 + "2"; // is "22"
 ```
 
 ## What typescript does for you:
