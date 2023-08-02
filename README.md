@@ -24,3 +24,17 @@ Typescript is all about Type Safety.
 ```txt
 Remember: Typescript is just a development tool. It's just used to help you write better javascript.
 ```
+
+## How to install typescript
+
+Install typescript globally. Remember to use sudo if you are on a mac.
+
+```bash
+sudo npm install -g typescript
+```
+
+Check if typescript is installed by checking the version.
+
+```bash
+tsc -v
+```
