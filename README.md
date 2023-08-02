@@ -38,3 +38,9 @@ Check if typescript is installed by checking the version.
 ```bash
 tsc -v
 ```
+
+## Types
+
+```ts
+let variableName: type = value;
+```
