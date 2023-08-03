@@ -66,4 +66,15 @@ function getValue(myVal: number) {
     return "200 OK";
 }
 
+
+// Specifying return type for map function
+// ######################################
+
+const heros = ["batman", "superman", "flash"];
+
+heros.map((hero): string => {
+    return `${hero} is a hero`;
+});
+
+
 export {};
