@@ -45,3 +45,10 @@ const data: string[] | number[] = [];
 
 // This is the correct way of doing it
 const data2: (string | number)[] = [];
+
+
+let seatAllotment: "aisle" | "window" | "middle";
+
+seatAllotment = "aisle";
+
+// seatAllotment = "crew";  // This is not allowed because crew is not assignable to type "aisle" | "window" | "middle"
