@@ -39,6 +39,14 @@ Check if typescript is installed by checking the version.
 tsc -v
 ```
 
+## Initialise typescript config file
+
+This will create a tsconfig.json file in your project.
+
+```bash
+tsc --init
+```
+
 ## Types
 
 ```ts
