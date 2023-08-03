@@ -34,4 +34,9 @@ function signIpUser(name: string, email: string, isPaid: boolean) {}
 // signIpUser(1, 2, 3); // This will throw an error because the arguments are not the correct type
 signIpUser("john doe", "johndoe@example.com", true);
 
+
+let loginUser = (name: string, email: string, isPaid: boolean = false) => {}
+
+loginUser("jane doe", "janedoe@example.com");
+
 export {};
