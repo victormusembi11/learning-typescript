@@ -61,4 +61,20 @@ let customer: Customer = {
 customer.name = "Jane Doe";
 // customer._id = "456"; // Error: Cannot assign to '_id' because it is a read-only property.
 
+
+// Combining types
+// ###############
+
+type cardNumber = {
+    cardNumber: string,
+}
+
+type cardDate = {
+    cardDate: string,
+}
+
+type cardDetails = cardNumber & cardDate & {
+    cardCVV: string,
+}
+
 export {};
