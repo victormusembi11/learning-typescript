@@ -39,4 +39,31 @@ let loginUser = (name: string, email: string, isPaid: boolean = false) => {}
 
 loginUser("jane doe", "janedoe@example.com");
 
+
+// Function return types
+// #####################
+
+function addFour(num: number): number {
+    // return "Hello"; // This will throw an error because the func is expecting a number to be returned
+    return num + 4;
+}
+
+// Arrow function return types
+const getGreeting = (greeting: string): string => {
+    return `${greeting} my friend!`;
+}
+
+/*
+Below we cannot add type annotation to the function because it will throw an error.
+This is because the function is returning different types of values.
+This will be handled by Union Types learnt later.
+*/
+
+function getValue(myVal: number) {
+    if (myVal > 10) {
+        return true;
+    } 
+    return "200 OK";
+}
+
 export {};
