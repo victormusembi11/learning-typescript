@@ -31,3 +31,17 @@ user = {
     username: "johndoe", // It's now changed to an Admin type
     id: 2,
 }
+
+// Array of different types
+// ########################
+
+/*
+When trying to add different types of values to an array,
+below is incorrect way of doing it because it means the array
+can have string or number values but not both.
+*/
+
+const data: string[] | number[] = [];
+
+// This is the correct way of doing it
+const data2: (string | number)[] = [];
