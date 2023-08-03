@@ -38,4 +38,27 @@ function createEmployee(employee: Employee): Employee {
 
 createEmployee({name: "John Doe", email: "johndoe@example.com", isActive: true});
 
+
+// Readonly & Optional properties
+// ####################
+
+type Customer = {
+    readonly _id: string,
+    name: string,
+    email: string,
+    isActive: boolean,
+    creditcardDetails?: string, // Optional property
+}
+
+
+let customer: Customer = {
+    _id: "123",
+    name: "John Doe",
+    email: "johndoe@example.com",
+    isActive: true,
+}
+
+customer.name = "Jane Doe";
+// customer._id = "456"; // Error: Cannot assign to '_id' because it is a read-only property.
+
 export {};
