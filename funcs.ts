@@ -22,4 +22,10 @@ This is because the function is expecting a type for the argument.
 
 addThree(10);
 
+function getUpper(val: string) {
+    return val.toUpperCase();
+}
+
+getUpper("hello");
+
 export {};
