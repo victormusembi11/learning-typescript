@@ -23,4 +23,19 @@ function createCourse(): {name: string, price: number} {
     return {name: "Joghn doe", price: 10};
 }
 
+// Type alias
+// ################
+
+type Employee = {
+    name: string,
+    email: string,
+    isActive: boolean,
+}
+
+function createEmployee(employee: Employee): Employee {
+    return {name: employee.name, email: employee.email, isActive: employee.isActive};
+}
+
+createEmployee({name: "John Doe", email: "johndoe@example.com", isActive: true});
+
 export {};
