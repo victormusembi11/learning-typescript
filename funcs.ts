@@ -28,4 +28,10 @@ function getUpper(val: string) {
 
 getUpper("hello");
 
+
+function signIpUser(name: string, email: string, isPaid: boolean) {}
+
+// signIpUser(1, 2, 3); // This will throw an error because the arguments are not the correct type
+signIpUser("john doe", "johndoe@example.com", true);
+
 export {};
