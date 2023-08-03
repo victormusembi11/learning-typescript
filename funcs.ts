@@ -77,4 +77,26 @@ heros.map((hero): string => {
 });
 
 
+// Void type
+// #########
+
+/*
+This is used when a function does not return anything.
+*/
+function consoleError(errmsg: string): void {
+    console.log(errmsg);
+}
+
+// Never type
+// ##########
+
+/*
+This is used when a function never returns anything.
+The never type represents values which are never observed. In a return type,
+this means that the function throws an exception or terminates execution of the program.
+*/
+function handleError(errmsg: string): never {
+    throw new Error(errmsg);
+}
+
 export {};
