@@ -73,8 +73,10 @@ type cardDate = {
     cardDate: string,
 }
 
+
+// this is called intersection type. its not good practice to use it.
 type cardDetails = cardNumber & cardDate & {
-    cardCVV: string,
+    cardCVV: number,
 }
 
 export {};
