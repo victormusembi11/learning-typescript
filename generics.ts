@@ -50,3 +50,34 @@ const getMoreSearchProducts = <T>(products: T[]): T => {
     const index = 3
     return products[index]
 }
+
+// More on generics
+// ################
+
+function anotherFunction<T, U extends number>(valueOne: T, valueTwo: U): object {
+    return {
+        valueOne,
+        valueTwo
+    }
+}
+
+// anotherFunction(3, "4") // this will not work because U extends number
+
+
+// Using interface to extend generic type
+// ######################################
+
+interface Database {
+    connection: string,
+    username: string,
+    password: string
+}
+
+function databaseFunction<T, U extends Database>(valueOne: T, valueTwo: U): object {
+    return {
+        valueOne,
+        valueTwo
+    }
+}
+
+databaseFunction(3, {connection: "root", username: "root", password: "pwd123"})
