@@ -18,6 +18,7 @@ const user1 = new User("johndoe@example.com", "john doe");
 class Employee {
 
     private _courseCount = 1
+    protected _courseCount2 = 10
 
     constructor(public email: string, public name: string) { // another way of setting access modifiers
         this.email = email;
@@ -44,3 +45,20 @@ class Employee {
 const emp1 = new Employee("janedoe@example.com", "janedoe");
 
 // emp1.deleteToken() // will not work because function is private
+
+
+/* NOTE: remeber when inheriting a class, the private methods/attributes are not inherited. only works with protected access modifier */
+
+class SubEmp extends Employee {
+
+    isFamily: boolean = true
+
+    changeCourseCount() {
+        // this._courseCount = 4 // the private methods/attributes are not inherited, this line will cause an error 
+    }
+
+    changeCourseCount2() {
+        this._courseCount2 = 20 // this attr is protected meaning it's private but still accessible in inheritance
+    }
+
+}
