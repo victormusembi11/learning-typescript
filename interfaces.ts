@@ -27,7 +27,23 @@ const user: User = {
     githubToken: "Y^&f65dTYfi&dbhjvgf&%^*e6d",
 };
 
+interface Admin extends User {
+    role: "admin" | "ta" | "learner"
+}
 
-
+const user2: Admin = {
+    _dbId: 55,
+    email: "janedoe@example.com",
+    userId: 5599,
+    startTrail: () => {
+        return "Trail started"
+    },
+    startTrail2: "Trail started",
+    getCoupon: (name: "jane20", off: 20) => {
+        return 20;
+    },
+    githubToken: "Y^&f6&^RuygIyjgF^&Re6d",
+    role: "admin",
+}
 
 export {};
