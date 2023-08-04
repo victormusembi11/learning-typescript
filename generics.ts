@@ -81,3 +81,16 @@ function databaseFunction<T, U extends Database>(valueOne: T, valueTwo: U): obje
 }
 
 databaseFunction(3, {connection: "root", username: "root", password: "pwd123"})
+
+
+// Generic classes
+// ###############
+class Sellable<T>{
+
+    public cart: T[] = []
+
+    addToCart(product: T) {
+        this.cart.push(product)
+    }
+
+}
