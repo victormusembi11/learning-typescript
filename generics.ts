@@ -32,3 +32,21 @@ interface Bootle {
 
 identityFour<Bootle>({brand: "test", type: 10})
 
+
+// Generics in arrow functions
+// ###########################
+
+function getSearchProduct<T>(products: T[]): T {
+    // do some db operations
+    const index = 3
+    return products[index]
+}
+
+// converting the above to an arrow function below
+// Note: When you see <T,> this is to say that it's not jsx syntax by ts generics
+
+const getMoreSearchProducts = <T>(products: T[]): T => {
+    // do some db operations
+    const index = 3
+    return products[index]
+}
