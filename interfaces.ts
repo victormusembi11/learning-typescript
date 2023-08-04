@@ -27,6 +27,7 @@ const user: User = {
     githubToken: "Y^&f65dTYfi&dbhjvgf&%^*e6d",
 };
 
+// Interface inheritance
 interface Admin extends User {
     role: "admin" | "ta" | "learner"
 }
