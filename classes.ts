@@ -17,6 +17,8 @@ const user1 = new User("johndoe@example.com", "john doe");
 
 class Employee {
 
+    private _courseCount = 1
+
     constructor(public email: string, public name: string) { // another way of setting access modifiers
         this.email = email;
         this.name = name;
@@ -26,6 +28,12 @@ class Employee {
     get getAppleEmail(): string {
         return `apple${this.email}`
     }
+
+    get courseCount(): number {
+        return this._courseCount
+    }
+
+    // set courseCount(courseNum): void {} // you cannot set type annotation to a setter it will cause an error
 
 }
 
