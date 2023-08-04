@@ -8,6 +8,11 @@ interface User {
     getCoupon(name: string, value: number): number,
 }
 
+// Reopening of the interface
+interface User {
+    githubToken: string
+}
+
 const user: User = {
     _dbId: 22,
     email: "johndoe@example.com",
@@ -18,5 +23,11 @@ const user: User = {
     startTrail2: "Trail started",
     getCoupon: (name: "john10", off: 10) => {
         return 10;
-    }
+    },
+    githubToken: "Y^&f65dTYfi&dbhjvgf&%^*e6d",
 };
+
+
+
+
+export {};
