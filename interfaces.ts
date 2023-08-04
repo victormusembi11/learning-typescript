@@ -9,6 +9,8 @@ interface User {
 }
 
 // Reopening of the interface
+// ##########################
+
 interface User {
     githubToken: string
 }
@@ -28,6 +30,8 @@ const user: User = {
 };
 
 // Interface inheritance
+// #####################
+
 interface Admin extends User {
     role: "admin" | "ta" | "learner"
 }
