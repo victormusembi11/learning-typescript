@@ -22,6 +22,11 @@ class Employee {
         this.name = name;
     }
 
+    // getter
+    get getAppleEmail(): string {
+        return `apple${this.email}`
+    }
+
 }
 
 const emp1 = new Employee("janedoe@example.com", "janedoe");
