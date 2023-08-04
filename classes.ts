@@ -35,6 +35,12 @@ class Employee {
 
     // set courseCount(courseNum): void {} // you cannot set type annotation to a setter it will cause an error
 
+    private deleteToken() {
+        console.log("token deleted")
+    }
+
 }
 
 const emp1 = new Employee("janedoe@example.com", "janedoe");
+
+// emp1.deleteToken() // will not work because function is private
